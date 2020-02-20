@@ -1,0 +1,14 @@
+uuid: 4262e25b-3b4b-48fe-b243-52ae2a06c493
+name: 'BLT Dev'
+mail: vijay.sutar@clariontechnologies.co.in
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

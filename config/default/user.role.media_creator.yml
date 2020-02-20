@@ -1,0 +1,18 @@
+uuid: 1c3d13d7-454c-4b68-a3db-4360de27de95
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8J2t5AXYOAkiBwYiWFZtw3ZsBn2IiRHQIVfj58gH3II
+id: media_creator
+label: 'Media creator'
+weight: 5
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access media overview'
+  - 'access media_browser entity browser pages'
+  - 'create media'
+  - 'delete media'
+  - 'dropzone upload files'
+  - 'update media'
