@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * d8blt_token.module
+ */
+
+use Drupal\Core\Render\BubbleableMetadata;
+
+/**
+ * Implements hook_help().
+ */
+function d8blt_token_help($route_name, $route_match) {
+  switch ($route_name) {
+    // Main module help for the dbblt_token_help module.
+    case 'help.page.d8blt_token':
+      $output = '';
+      $output .= '<h3>' . t('D8BLT token module') . '</h3>';
+      $output .= '<p>' . t('D8 BLT custom token module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function d8blt_token_token_info() {
+  $type = [
+    'name' => t('My token'),
+    'description' => t('Token related to D8BLT token module.'),
+  ];
+
+  $tokens['mytoken1'] = [
+    'name' => t('My token name'),
+    'description' => t('The my token name value'),
+  ];
+
+  return [
+    'types' => ['mytokens' => $type],
+    'tokens' => ['mytokens' => $tokens],
+  ];
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function d8blt_token_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+
+  $replacements = [];
+  if ($type == 'mytokens') {
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'mytoken1':
+          $replacements[$original] = '123456';
+          // $config = \Drupal::config('hello_world.custom_salutation');
+          // $bubbleable_metadata->addCacheableDependency($config);
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}

@@ -1,4 +1,5 @@
 module:
+  advanced_text_formatter: 0
   autosave_form: 0
   bg_image_formatter: 0
   blazy: 0
@@ -15,6 +16,7 @@ module:
   contextual: 0
   crop: 0
   ctools: 0
+  d8blt_token: 0
   datetime: 0
   dblog: 0
   diff: 0

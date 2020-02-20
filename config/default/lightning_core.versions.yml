@@ -1,3 +1,4 @@
+advanced_text_formatter: 1.0.0
 autosave_form: 1.1.0
 bg_image_formatter: 1.12.0
 blazy: 2.0.0-rc6
@@ -14,6 +15,7 @@ content_moderation: 8.8.2
 contextual: 8.8.2
 crop: 2.0.0
 ctools: 3.2.0
+d8blt_token: 0.0.0
 datetime: 8.8.2
 dblog: 8.8.2
 diff: 1.0.0

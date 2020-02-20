@@ -27,15 +27,18 @@ third_party_settings:
             uuid: 0b15068f-8ba8-45ac-84c3-04353744c2f7
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:page:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
                 type: text_default
                 settings: {  }
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
           bf74e2cc-5107-4285-9b03-da849a146fb8:
@@ -93,5 +96,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  content_moderation_control: true
   layout_selection: true
   search_api_excerpt: true
